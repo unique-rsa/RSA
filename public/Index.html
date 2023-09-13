@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Text to Show Image</title>
+</head>
+<body>
+    <p id="displayText" style="cursor: pointer;">Click me to show the image</p>
+    <img id="image" src="" style="display: none;">
+    <script>
+        document.getElementById("displayText").addEventListener("click", function() {
+            document.getElementById("image").src = "pic.png"; // Change to your image file name
+            document.getElementById("image").style.display = "block";
+        });
+    </script>
+</body>
+</html>
